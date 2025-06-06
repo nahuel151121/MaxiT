@@ -1,0 +1,159 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;             
+  margin: 0;
+  color: #1c1c1c;
+}
+
+header {
+  background: linear-gradient(to right, #002f5f, #00aaff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #0077cc;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  background-color: #333; /* fondo oscuro */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: #333;           /* texto oscuro al pasar el mouse */
+  background-color: #f39c12; /* fondo naranja vibrante */
+}
+
+nav a:hover {
+  background-color: #005fa3;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #002f5f;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #002f5f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 16px;
+}
