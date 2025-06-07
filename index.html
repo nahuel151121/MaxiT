@@ -5,13 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MaxiTech</title>
-  <link rel="icon" href="icono.png"/>
+  <link rel="icon" href="icono2.png"/>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <div style="text-align: center; margin-top: 10px; font-weight: bold;">
+  <span id="fecha-hora"></span>
+</div>
 </head>
 <body>
   <header>
-    <h1><img src="icono.png" alt="Logo MaxiTech" width="50"> MaxiTech</h1>
+    <h1><img src="icono2.png" alt="Logo MaxiTech" width="50"> <Font Face = "Arial" Size = 12><u>MaxiTech</u> </font> </h1>
     <p>Servicio técnico especializado en reparación de PC, Celulares y Smart TV</p>
   </header>
 
@@ -107,5 +111,17 @@
     <p>&copy; 2025 MaxiTech - Todos los derechos reservados</p>
   </footer>
 
+<script>
+  function actualizarFechaHora() {
+    const ahora = new Date();
+    const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const fecha = ahora.toLocaleDateString('es-AR', opcionesFecha);
+    const hora = ahora.toLocaleTimeString('es-AR');
+    document.getElementById("fecha-hora").textContent = `${hora} — Hoy es ${fecha}`;
+  }
+
+  actualizarFechaHora(); // Mostrar al cargar
+  setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
+</script>
 </body>
 </html>
